@@ -1,0 +1,84 @@
+{
+  "versione": "1.0",
+  "id": "opera-esempio-immaginario",
+  "tipo": "opera",
+  "titolo": "Il giardino delle ombre (titolo immaginario)",
+  "titoli_alternativi": [],
+  "compositori": [
+    {
+      "nome": "Giulia Esempio",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "librettisti": [
+    {
+      "nome": "Andrea Esempio",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "genere": "Opera in due atti (fittizia)",
+  "struttura": "Due atti",
+  "lingue_libretto": [
+    "italiano"
+  ],
+  "fonti_letterarie": [],
+  "prima_rappresentazione": {
+    "data": "2001-05-12",
+    "teatro": "Teatro delle Stelle (fittizio)",
+    "citta": "Torino",
+    "paese": "Italia",
+    "fonti_ids": [
+      "f001"
+    ],
+    "note": "Dati inventati"
+  },
+  "ambientazione": "Una città immaginaria",
+  "sinossi": "Lia cerca una lettera perduta (vicenda inventata).",
+  "personaggi": [
+    {
+      "nome": "Lia",
+      "registro_vocale": "soprano",
+      "descrizione": "Protagonista",
+      "versioni_ids": [
+        "v1"
+      ],
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "versioni": [
+    {
+      "id": "v1",
+      "denominazione": "Versione originale inventata",
+      "anno": 2001,
+      "descrizione": "Esempio tecnico, non opera esistente.",
+      "modifiche_documentate": [],
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "contesto_storico": [],
+  "note_musicali_drammaturgiche": [],
+  "risorse": [],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Fonte fittizia non esistente",
+      "url": "https://example.org/opera-fittizia",
+      "consultata_il": "2026-11-24",
+      "attesta": "Dati interamente inventati per testare il formato.",
+      "nota": "Non usare in articoli"
+    }
+  ],
+  "gestione": {
+    "stato": "bozza",
+    "aggiornato_il": "2026-11-24",
+    "note": "Solo esempio tecnico fittizio"
+  }
+}
