@@ -1,0 +1,60 @@
+{
+  "versione": "1.0",
+  "id": "festival-esempio-immaginario",
+  "tipo": "festival",
+  "nome": "Festival delle Stelle (esempio fittizio)",
+  "nomi_alternativi": [],
+  "citta": "Torino",
+  "paese": "Italia",
+  "sito_ufficiale": null,
+  "soggetto_gestore": "Associazione Stelle (fittizia)",
+  "indirizzo_istituzionale": null,
+  "sedi": [
+    {
+      "nome": "Auditorium delle Stelle (fittizio)",
+      "citta": "Torino",
+      "paese": "Italia",
+      "indirizzo": null,
+      "stato": "occasionale",
+      "note": null,
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "attivita": [
+    {
+      "testo": "Festival di opera e concerti (esempio inventato).",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "fondazione_o_avvio": "2001 (esempio inventato)",
+  "storia": [
+    {
+      "data_o_periodo": "2001",
+      "descrizione": "Avvio della prima edizione (dati inventati).",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "identita_istituzionale": "Manifestazione immaginaria usata per verificare la scheda.",
+  "note_operative": null,
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Documento di prova inesistente",
+      "url": "https://example.org/festival-fittizio",
+      "consultata_il": "2026-11-24",
+      "attesta": "Dati inventati a fini di collaudo.",
+      "note": "Non usare come fonte."
+    }
+  ],
+  "gestione": {
+    "stato": "bozza",
+    "aggiornato_il": "2026-11-24",
+    "note": "Esempio integralmente inventato; non archiviare come evento reale."
+  }
+}
