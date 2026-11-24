@@ -1,0 +1,410 @@
+{
+  "versione": "1.0",
+  "id": "allestimento-traviata-decker-salisburgo-2005",
+  "tipo": "allestimento",
+  "opera": {
+    "titolo": "La traviata",
+    "compositore": "Giuseppe Verdi",
+    "opera_id": null
+  },
+  "identita_allestimento": {
+    "denominazione": "La traviata — regia di Willy Decker, creata per il Festival di Salisburgo nel 2005",
+    "nota_identificazione": "La documentazione del Metropolitan del 2010 e 2012 la attribuisce espressamente alla produzione originale del Festival di Salisburgo; le fonti olandesi e madrilene identificano la stessa messinscena. La dicitura New Production del Metropolitan significa nuova per quel teatro, non nuova regia mondiale.",
+    "versione_opera_usata": null
+  },
+  "responsabili": [
+    {
+      "incarico": "regia",
+      "nome": "Willy Decker",
+      "fonti_ids": [
+        "f001",
+        "f003"
+      ]
+    },
+    {
+      "incarico": "scene e costumi",
+      "nome": "Wolfgang Gussmann",
+      "fonti_ids": [
+        "f003",
+        "f007"
+      ]
+    },
+    {
+      "incarico": "costumi associati",
+      "nome": "Susana Mendoza",
+      "fonti_ids": [
+        "f003"
+      ]
+    },
+    {
+      "incarico": "luci",
+      "nome": "Hans Toelstede",
+      "fonti_ids": [
+        "f003",
+        "f007"
+      ]
+    },
+    {
+      "incarico": "coreografia",
+      "nome": "Athol Farmer",
+      "fonti_ids": [
+        "f003",
+        "f007"
+      ]
+    }
+  ],
+  "origine": {
+    "stato_documentato": "prima_documentata",
+    "teatro": "Großes Festspielhaus",
+    "citta": "Salisburgo",
+    "paese": "Austria",
+    "anno": 2005,
+    "stagione": null,
+    "note": "Produzione creata per il Festival di Salisburgo. La data esatta della prima non è stata estratta da queste fonti.",
+    "fonti_ids": [
+      "f001",
+      "f002"
+    ]
+  },
+  "coproduttori": [],
+  "presentazioni": [
+    {
+      "tipo_presentazione": "prima_allestimento",
+      "stato": "realizzata",
+      "teatro": "Großes Festspielhaus",
+      "citta": "Salisburgo",
+      "paese": "Austria",
+      "anno": 2005,
+      "stagione": null,
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ],
+      "note": null,
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Het Muziektheater",
+      "citta": "Amsterdam",
+      "paese": "Paesi Bassi",
+      "anno": 2009,
+      "stagione": null,
+      "fonti_ids": [
+        "f005"
+      ],
+      "note": "La testata olandese documenta una precedente presentazione nel 2009.",
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "paese": "Stati Uniti",
+      "anno": 2010,
+      "stagione": null,
+      "fonti_ids": [
+        "f003"
+      ],
+      "note": "Première del 31 dicembre 2010: nuova produzione per il Met, ma ripresa della regia salisburghese.",
+      "variazioni_documentate": "Alcuni cambiamenti di movimenti e luci sono segnalati da una recensione del 2011; verificare il dettaglio rispetto a materiali di produzione.",
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "paese": "Stati Uniti",
+      "anno": 2012,
+      "stagione": null,
+      "fonti_ids": [
+        "f004"
+      ],
+      "note": null,
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "annunciata",
+      "teatro": "Het Muziektheater",
+      "citta": "Amsterdam",
+      "paese": "Paesi Bassi",
+      "anno": 2013,
+      "stagione": null,
+      "fonti_ids": [
+        "f005"
+      ],
+      "note": "Ripresa annunciata in un articolo del 25 aprile 2013 per il mese di maggio; la fonte consultata è precedente alle recite. Serve verifica successiva dell’effettiva rappresentazione.",
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "paese": "Stati Uniti",
+      "anno": null,
+      "stagione": "2014/2015",
+      "fonti_ids": [
+        "f012",
+        "f014"
+      ],
+      "note": "Produzione ripresa fra dicembre 2014 e gennaio 2015: una sola presentazione stagionale, non una riga per ciascun anno solare.",
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "paese": "Stati Uniti",
+      "anno": 2017,
+      "stagione": null,
+      "fonti_ids": [
+        "f013",
+        "f014"
+      ],
+      "note": "Il programma del 11 marzo 2017 attribuisce ancora la produzione a Willy Decker.",
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "da_verificare",
+      "stato": "annullata",
+      "teatro": "Teatro Real",
+      "citta": "Madrid",
+      "paese": "Spagna",
+      "anno": 2020,
+      "stagione": null,
+      "fonti_ids": [
+        "f006"
+      ],
+      "note": "Presentazione prevista e non realizzata per la pandemia. Non va conteggiata come ripresa effettivamente rappresentata.",
+      "variazioni_documentate": null,
+      "crediti_specifici": []
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Teatro Real",
+      "citta": "Madrid",
+      "paese": "Spagna",
+      "anno": 2025,
+      "stagione": null,
+      "fonti_ids": [
+        "f006",
+        "f010"
+      ],
+      "note": "Serie di rappresentazioni da giugno a luglio 2025; il Teatro Real indica produzione di Dutch National Opera & Ballet.",
+      "variazioni_documentate": null,
+      "crediti_specifici": [
+        {
+          "incarico": "ripresa della regia",
+          "nome": "Gina Lapinski",
+          "fonti_ids": [
+            "f010"
+          ]
+        },
+        {
+          "incarico": "ripresa delle scene",
+          "nome": "Thomas Bruner",
+          "fonti_ids": [
+            "f006"
+          ]
+        }
+      ]
+    }
+  ],
+  "caratteristiche_documentate": [
+    {
+      "testo": "Spazio scenico semicircolare essenziale, con grande orologio; Violetta indossa un abito rosso mentre il coro appare in abiti scuri e sobri.",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f007",
+        "f008"
+      ]
+    },
+    {
+      "testo": "La figura del dottor Grenvil viene utilizzata anche come personificazione della morte, presente oltre le scene previste dal libretto.",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f007",
+        "f008"
+      ]
+    },
+    {
+      "testo": "Decker collega la forma circolare della scena alla percezione del tempo che si esaurisce e all’imminenza della morte di Violetta.",
+      "natura": "intenzione_dichiarata",
+      "attribuzione": "Willy Decker",
+      "fonti_ids": [
+        "f007"
+      ]
+    },
+    {
+      "testo": "Nella presentazione madrilena del 2025 è documentata una ripresa a cura di Gina Lapinski.",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f010"
+      ]
+    }
+  ],
+  "ricezione_critica": [
+    {
+      "testata": "The Guardian",
+      "autore": "Edward Greenfield",
+      "data": "2005-08-23",
+      "teatro": "Großes Festspielhaus",
+      "citta": "Salisburgo",
+      "aspetto": "regia e struttura scenica",
+      "valutazione": "Valutazione complessivamente entusiasta della regia, pur riconoscendo che la scena minimalista e l’orologio costituiscono un espediente vistoso.",
+      "fonte_id": "f008"
+    },
+    {
+      "testata": "The Classical Review",
+      "autore": "Corinna da Fonseca-Wollheim",
+      "data": "2011-01-02",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "aspetto": "regia",
+      "valutazione": "Apprezza la forza della lettura scenica, soprattutto il conflitto fra Violetta e la società e le interazioni fra personaggi; le riserve sull’orchestra e su singoli cantanti riguardano quella specifica esecuzione.",
+      "fonte_id": "f009"
+    },
+    {
+      "testata": "Parterre Box",
+      "autore": "A. Salvemini",
+      "data": "2011-01-08",
+      "teatro": "Metropolitan Opera House",
+      "citta": "New York",
+      "aspetto": "linguaggio simbolico",
+      "valutazione": "Difende la scelta astratta e contemporanea; giudica alcuni elementi, in particolare l’orologio, talvolta poco sottili.",
+      "fonte_id": "f011"
+    },
+    {
+      "testata": "El País",
+      "autore": "Pablo L. Rodríguez",
+      "data": "2025-06-25",
+      "teatro": "Teatro Real",
+      "citta": "Madrid",
+      "aspetto": "regia e realizzazione 2025",
+      "valutazione": "Riconosce alla regia la capacità di mettere in primo piano Violetta, ma osserva che l’esito della serata dipendeva dalla profondità interpretativa degli artisti; giudizio molto critico sulla direzione musicale di quel cast, non trasferibile alla regia nelle altre sedi.",
+      "fonte_id": "f010"
+    }
+  ],
+  "risorse": [],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Festival di Salisburgo — cronologia 2005",
+      "url": "https://www.salzburgerfestspiele.at/en/history/25-july-31-august-3",
+      "consultata_il": "2026-11-24",
+      "attesta": "Produzione originale del 2005 di La traviata con la regia di Willy Decker."
+    },
+    {
+      "id": "f002",
+      "titolo": "Festival di Salisburgo — documentazione video di La traviata 2005",
+      "url": "https://www.salzburgerfestspiele.at/wp-content/uploads/2021/08/festspieldokumente_gesamtverzeichnis_2021_abz11.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Großes Festspielhaus, 2005; attribuzione della regia a Willy Decker."
+    },
+    {
+      "id": "f003",
+      "titolo": "Metropolitan Opera Archives — 31 dicembre 2010",
+      "url": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0384622",
+      "consultata_il": "2026-11-24",
+      "attesta": "Prima presentazione al Met nel 2010, produzione originaria di Salisburgo e crediti."
+    },
+    {
+      "id": "f004",
+      "titolo": "Metropolitan Opera Archives — 6 aprile 2012",
+      "url": "https://archives.metopera.org/MetOperaSearch/record.jsp?dockey=0384979",
+      "consultata_il": "2026-11-24",
+      "attesta": "Ripresa al Metropolitan Opera nel 2012 della produzione originale di Salisburgo."
+    },
+    {
+      "id": "f005",
+      "titolo": "Place de l’Opera — DNO herneemt Willy Deckers Traviata",
+      "url": "https://www.operamagazine.nl/binnenkort/21825/dno-herneemt-willy-deckers-traviata/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Produzione presentata da De Nederlandse Opera ad Amsterdam nel 2009 e ripresa nel 2013 a Het Muziektheater."
+    },
+    {
+      "id": "f006",
+      "titolo": "Teatro Real — La traviata, stagione 2025",
+      "url": "https://www.teatroreal.es/es/espectaculo/traviata",
+      "consultata_il": "2026-11-24",
+      "attesta": "Spettacolo del 2025, crediti di produzione, produttore indicato Dutch National Opera & Ballet, rappresentazione annullata nel 2020."
+    },
+    {
+      "id": "f007",
+      "titolo": "Metropolitan Opera — Mad About the Girl",
+      "url": "https://www.metopera.org/user-information/nightly-met-opera-streams/articles/mad-about-the-girl/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Intenzioni dichiarate del regista, l’orologio, Violetta in rosso, coro in bianco e nero, crediti di scena e luci."
+    },
+    {
+      "id": "f008",
+      "titolo": "The Guardian — La Traviata/Mazeppa, Edward Greenfield",
+      "url": "https://www.theguardian.com/music/2005/aug/23/classicalmusicandopera",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione della produzione a Salisburgo 2005, con giudizio favorevole sulla regia e riserva circa l’espediente scenografico."
+    },
+    {
+      "id": "f009",
+      "titolo": "The Classical Review — Corinna da Fonseca-Wollheim",
+      "url": "https://theclassicalreview.com/2011/01/the-mets-updated-traviata-morphs-the-intimate-drama-into-stark-blood-sport/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione della prima serie al Met 2010–2011; giudizi sulla regia e osservazioni sull’esecuzione musicale specifica."
+    },
+    {
+      "id": "f010",
+      "titolo": "El País — Pablo L. Rodríguez, 25 giugno 2025",
+      "url": "https://elpais.com/cultura/2025-06-25/nadine-sierra-redime-una-traviata-escasa-de-emocion-en-el-teatro-real.html",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione a Madrid nel 2025, descrizione dell’allestimento, ripresa firmata da Gina Lapinski, critiche all’esecuzione di quella serata."
+    },
+    {
+      "id": "f011",
+      "titolo": "Parterre Box — A. Salvemini, 8 gennaio 2011",
+      "url": "https://parterre.com/2011/01/08/new-classic/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione con osservazioni sul linguaggio simbolico e alcune differenze documentate tra Salisburgo e New York."
+    },
+    {
+      "id": "f012",
+      "titolo": "Metropolitan Opera — rendiconto stagione 2014/15",
+      "url": "https://www.metopera.org/globalassets/about/annual-reports/fy15_annual_report.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Documenta La traviata nella regia di Willy Decker nella stagione 2014/15."
+    },
+    {
+      "id": "f013",
+      "titolo": "Metropolitan Opera — programma 11 marzo 2017",
+      "url": "https://www.metopera.org/globalassets/user-information/nightly-opera-streams/week-15/playbills/031117-traviata.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Ripresa di La traviata nella regia di Willy Decker nel 2017, con attribuzione della produzione originale a Salisburgo."
+    },
+    {
+      "id": "f014",
+      "titolo": "Metropolitan Opera — cronologia La traviata",
+      "url": "https://archives.metopera.org/MetOperaSearch/search.jsp?sort=PDATE&titles=La+Traviata",
+      "consultata_il": "2026-11-24",
+      "attesta": "Serie di rappresentazioni nel 2014–2015 e nel 2017; nuova produzione del 2018 da non confondere con la regia di Decker."
+    }
+  ],
+  "gestione": {
+    "stato": "approvata",
+    "aggiornato_il": "2026-11-24",
+    "note": "Collaudo editoriale approvato. Sono documentate più riprese, ma la ricerca non garantisce esaustività mondiale; la presentazione del 2013 ad Amsterdam è per ora confermata da un annuncio preventivo e va verificata successivamente. La nuova produzione del Metropolitan nel dicembre 2018 appartiene a una regia diversa e NON deve essere accorpata a questa scheda."
+  }
+}
