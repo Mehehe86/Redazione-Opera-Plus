@@ -1,9 +1,9 @@
-# Opera+ — Procedura redazionale per le schede dei cantanti (v1.1)
+# Opera+ — Procedura redazionale per le schede dei cantanti (v1.2)
 
 ## A che cosa serve la scheda
 La scheda deve permettere al giornalista di ritrovare **tutti i ruoli documentati** di un cantante e, per ciascun ruolo, **tutte le esperienze teatrali documentabili**, con nome del teatro e città quando noti. Non selezionare soltanto un teatro rappresentativo, il primo teatro o quello più prestigioso. Va alimentata progressivamente durante il normale lavoro giornalistico. Non è necessario registrare tutte le date di recita, i cast, gli altri interpreti, le coppie artistiche o le collaborazioni ricorrenti. Non introdurre collegamenti a Opera+ Atlas.
 
-Il tracciato tecnico si trova in `schemi-json/artista-cantante.schema.json`. L'esempio di compilazione, interamente fittizio, è in `esempi-archivio/artista-cantante-esempio.json`.
+Il tracciato tecnico si trova in `schemi-json/artista-cantante.schema.json`. L'esempio di compilazione, interamente fittizio, è in `esempi-archivio/artista-cantante-esempio.json`. **Lo schema JSON è il formato di archiviazione, non quello di lettura**: per presentare la scheda al redattore applica il formato cronologico descritto nella sezione 8.
 
 ## 1. Cercare la persona giusta
 Prima di creare una scheda verifica se ne esista già una, cercando nome professionale e possibili varianti. Per gli omonimi confronta biografie, professione, formazione e fonti ufficiali: non fondere due persone sulla base del solo nome, della città o del settore di lavoro. In caso di dubbio mantieni schede separate e una nota di omonimia. Non raccogliere indirizzi privati o altri dati personali irrilevanti.
@@ -47,3 +47,31 @@ Se una nuova fonte corregge un dato errato, descrivi il cambiamento e lascia che
 Prima di scrivere nell'archivio condiviso, sottoponi al redattore le proposte di creazione e modifica, indicando esattamente i dati aggiunti o corretti e le loro fonti. Dopo l'approvazione, verifica che il file sia JSON valido e conforme allo schema, che ogni `fonti_ids` faccia riferimento a una fonte reale, che non siano duplicati ruoli o esperienze e che ogni teatro noto abbia una città esplicita.
 
 Il giornalista potrà poi utilizzare la scheda per selezionare le informazioni pertinenti a un articolo o a un'intervista, controllando le fonti prima di riportare affermazioni importanti. Non deve trasformare l'intero repertorio in un elenco da inserire automaticamente negli articoli.
+
+## 8. Come mostrare la scheda al redattore: un solo elenco cronologico
+Quando il redattore chiede di vedere la scheda di un cantante, **presenta come formato predefinito un elenco unico di righe di testo**, in ordine cronologico dal passato al futuro, **senza suddivisioni per ruolo, anno, opera, teatro o altra categoria**. Non trasformare l'elenco in una tabella, in una timeline a blocchi o in sezioni con intestazioni. Non raggruppare tutte le esecuzioni di Mimì in un unico punto: se Mimì ricorre nel 2008, 2010 e 2016, deve comparire rispettivamente tra le esperienze di ciascun anno.
+
+Ogni esperienza occupa una riga con questo ordine fisso:
+
+`ANNO O STAGIONE – PERSONAGGIO – OPERA – TEATRO – CITTÀ`
+
+Esempio **interamente inventato** (non utilizzare come informazione biografica):
+
+```text
+2021 – Gilda – Rigoletto – Teatro Regio – Torino
+2022 – Violetta – La traviata – Teatro dell'Opera – Roma
+2024 – Gilda – Rigoletto – Teatro Regio – Torino
+Stagione 2026/2027 – Gilda – Rigoletto – Teatro Regio – Parma [annunciato]
+```
+
+Ordina **le esperienze** anziché i ruoli: ricava una riga da ciascuna voce nell'array `esperienze` del repertorio, collega ogni riga al relativo personaggio e opera e ordina l'insieme. Non modificare né duplicare i dati memorizzati soltanto per cambiarne la visualizzazione. Quando due esperienze hanno lo stesso anno e la fonte non indica un ordine temporale più preciso, non inventare quale sia avvenuta prima: adotta un ordine stabile, per esempio alfabetico per opera e teatro.
+
+Per le stagioni come `2023/2024`, mostra **«Stagione 2023/2024»**, senza sostituirla con un anno scelto arbitrariamente; nell'ordinamento collocala indicativamente all'inizio della stagione, segnalandone il carattere approssimativo rispetto alle voci con anno noto. Se una fonte fornisce soltanto un periodo pluriennale, non trasformarlo in un anno singolo; riportalo con la dicitura disponibile e segnala il limite nelle note di verifica. Le esperienze prive di qualunque collocazione cronologica vanno riportate **in coda all'elenco**, una riga ciascuna, con «Anno da verificare», senza inventare una posizione.
+
+Se il teatro non è documentato, scrivi «Teatro da verificare»; se è documentata la città ma non il teatro, lascia leggibile la città. Se manca anche la città, scrivi «Città da verificare». Riporta il **nome esatto del teatro e la città**, anche quando il nome appare riconoscibile: «Teatro Regio – Torino» e «Teatro Regio – Parma» non sono intercambiabili. Il Paese rimane nei dati strutturati e può essere aggiunto nella riga solo quando necessario per disambiguare la città.
+
+Contrassegna in fondo alla riga gli stati che il lettore non deve scambiare per esecuzioni avvenute: **[annunciato]**, **[annullato]**, **[sostituito]**. I ruoli dichiarati **in preparazione**, o citati genericamente in un repertorio senza alcuna esperienza teatrale attestata, devono restare disponibili nella scheda strutturata. Se li mostri nell'elenco di lettura, presentali soltanto **dopo le esperienze datate**, con indicazione esplicita **[in preparazione]** o **[interpretazione non verificata]**, senza inventare un teatro o un anno.
+
+Il redattore deve poter leggere il repertorio senza incontrare identificativi JSON, collegamenti alle fonti su ogni riga o note tecniche ripetute. **Conserva tuttavia tutti i riferimenti alle fonti nei dati sottostanti** e rendili consultabili quando il redattore chiede una verifica. Eventuali problemi importanti della bozza (attribuzioni incerte, probabili doppioni, teatri non identificati) possono essere segnalati brevemente *dopo* l'elenco, senza dividerlo in sezioni o modificarne l'ordine.
+
+Non confondere «scheda completa nel formato richiesto» con «ricerca esaustiva»: una bozza parziale deve essere identificata come tale. Non eliminare righe soltanto perché si ripetono ruolo e teatro: se la documentazione attesta anni o stagioni diversi, sono esperienze distinte.
