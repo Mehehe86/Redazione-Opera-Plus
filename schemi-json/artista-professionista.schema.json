@@ -1,0 +1,337 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Opera+ — Scheda professionista di teatro musicale v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versione",
+    "id",
+    "tipo",
+    "nome",
+    "professioni",
+    "biografia",
+    "lavori",
+    "fonti",
+    "gestione"
+  ],
+  "properties": {
+    "versione": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tipo": {
+      "const": "professionista"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nomi_alternativi": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "professioni": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "description": "Es. regista, direttore d'orchestra, scenografo, costumista, light designer, coreografo"
+    },
+    "biografia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "formazione": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fatto"
+      }
+    },
+    "incarichi_istituzionali": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fatto"
+      }
+    },
+    "siti_ufficiali": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "nota_omonimia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lavori": {
+      "type": "array",
+      "description": "Ogni lavoro artistico distinto: stessa opera con nuova regia = altra voce; riprese dello stesso allestimento = ulteriori esperienze nella medesima voce, se accertabile.",
+      "items": {
+        "$ref": "#/$defs/lavoro"
+      }
+    },
+    "fonti": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "gestione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "aggiornato_il"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "bozza",
+            "approvata",
+            "da_verificare"
+          ]
+        },
+        "aggiornato_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fatto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "testo",
+        "fonti_ids"
+      ],
+      "properties": {
+        "testo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titolo",
+        "url",
+        "consultata_il",
+        "attesta"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titolo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "consultata_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "attesta": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "esperienza": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "teatro",
+        "citta",
+        "paese",
+        "anno",
+        "stagione",
+        "fonti_ids"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "realizzato",
+            "annunciato",
+            "annullato",
+            "sostituito"
+          ]
+        },
+        "teatro": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Sede effettiva, se documentata, non istituzione produttrice"
+        },
+        "citta": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paese": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anno": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1600,
+          "maximum": 2200
+        },
+        "stagione": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "teatro": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "teatro"
+            ]
+          },
+          "then": {
+            "properties": {
+              "citta": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "lavoro": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "incarico",
+        "opera",
+        "compositore",
+        "identificativo_allestimento",
+        "stato_documentato",
+        "esperienze",
+        "fonti_ids"
+      ],
+      "properties": {
+        "incarico": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Regia, direzione musicale, scene, costumi, luci, coreografia, ecc."
+        },
+        "opera": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compositore": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "identificativo_allestimento": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "ID interno facoltativo per distinguere regie differenti della stessa opera; non inventare identità di allestimento"
+        },
+        "stato_documentato": {
+          "enum": [
+            "realizzato",
+            "annunciato",
+            "in_preparazione",
+            "attribuzione_non_verificata"
+          ]
+        },
+        "esperienze": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/esperienza"
+          }
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
