@@ -1,0 +1,70 @@
+{
+  "versione": "1.0",
+  "id": "esempio-cantante-maria-rossi",
+  "nome": "Maria Rossi (nome fittizio)",
+  "nomi_alternativi": [],
+  "registro_vocale": "soprano",
+  "biografia": null,
+  "formazione": [],
+  "incarichi": [],
+  "siti_ufficiali": [],
+  "nota_omonimia": null,
+  "repertorio": [
+    {
+      "opera": "Rigoletto",
+      "compositore": "Giuseppe Verdi",
+      "personaggio": "Gilda",
+      "stato_documentato": "interpretato",
+      "esperienze": [
+        {
+          "stato": "interpretato",
+          "teatro": "Teatro Regio",
+          "citta": "Torino",
+          "paese": "Italia",
+          "anno": 2022,
+          "fonti_ids": [
+            "f001"
+          ],
+          "note": null
+        },
+        {
+          "stato": "annunciato",
+          "teatro": "Teatro Regio",
+          "citta": "Parma",
+          "paese": "Italia",
+          "anno": 2027,
+          "fonti_ids": [
+            "f002"
+          ],
+          "note": null
+        }
+      ],
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ],
+      "note": null
+    }
+  ],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "DOCUMENTO FITTIZIO - 2022",
+      "url": "https://example.org/2022",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato: Gilda interpretata al Teatro Regio di Torino nel 2022."
+    },
+    {
+      "id": "f002",
+      "titolo": "DOCUMENTO FITTIZIO - 2027",
+      "url": "https://example.org/2027",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato: Gilda annunciata al Teatro Regio di Parma nel 2027, non ancora interpretata."
+    }
+  ],
+  "gestione": {
+    "stato": "bozza",
+    "aggiornato_il": "2026-11-24",
+    "note": "Esempio interamente inventato. Non usare come fonte."
+  }
+}
