@@ -1,0 +1,108 @@
+{
+  "versione": "1.0",
+  "id": "esempio-professionista-giulia-bianchi",
+  "tipo": "professionista",
+  "nome": "Giulia Bianchi (esempio fittizio)",
+  "nomi_alternativi": [],
+  "professioni": [
+    "regista"
+  ],
+  "biografia": null,
+  "formazione": [],
+  "incarichi_istituzionali": [],
+  "siti_ufficiali": [],
+  "nota_omonimia": null,
+  "lavori": [
+    {
+      "incarico": "regia",
+      "opera": "La traviata",
+      "compositore": "Giuseppe Verdi",
+      "identificativo_allestimento": "esempio-allestimento-1",
+      "stato_documentato": "realizzato",
+      "esperienze": [
+        {
+          "stato": "realizzato",
+          "teatro": "Teatro Regio",
+          "citta": "Torino",
+          "paese": "Italia",
+          "anno": 2021,
+          "stagione": null,
+          "fonti_ids": [
+            "f001"
+          ],
+          "note": "Prima presentazione nell'esempio"
+        },
+        {
+          "stato": "realizzato",
+          "teatro": "Teatro Regio",
+          "citta": "Parma",
+          "paese": "Italia",
+          "anno": 2024,
+          "stagione": null,
+          "fonti_ids": [
+            "f002"
+          ],
+          "note": "Ripresa dello stesso allestimento nell'esempio"
+        }
+      ],
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ],
+      "note": null
+    },
+    {
+      "incarico": "regia",
+      "opera": "La traviata",
+      "compositore": "Giuseppe Verdi",
+      "identificativo_allestimento": "esempio-allestimento-2",
+      "stato_documentato": "annunciato",
+      "esperienze": [
+        {
+          "stato": "annunciato",
+          "teatro": "Teatro Comunale",
+          "citta": "Bologna",
+          "paese": "Italia",
+          "anno": null,
+          "stagione": "2026/2027",
+          "fonti_ids": [
+            "f003"
+          ],
+          "note": null
+        }
+      ],
+      "fonti_ids": [
+        "f003"
+      ],
+      "note": "Nuovo allestimento differente dal precedente nell'esempio"
+    }
+  ],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "DOCUMENTO FITTIZIO: nuova regia 2021",
+      "url": "https://example.org/regia-2021",
+      "consultata_il": "2026-11-24",
+      "attesta": "Dati inventati: regia realizzata a Torino nel 2021"
+    },
+    {
+      "id": "f002",
+      "titolo": "DOCUMENTO FITTIZIO: ripresa 2024",
+      "url": "https://example.org/ripresa-2024",
+      "consultata_il": "2026-11-24",
+      "attesta": "Dati inventati: ripresa della stessa regia a Parma nel 2024"
+    },
+    {
+      "id": "f003",
+      "titolo": "DOCUMENTO FITTIZIO: nuova regia annunciata",
+      "url": "https://example.org/annuncio-2027",
+      "consultata_il": "2026-11-24",
+      "attesta": "Dati inventati: altra regia annunciata per la stagione 2026/2027 a Bologna"
+    }
+  ],
+  "gestione": {
+    "stato": "bozza",
+    "aggiornato_il": "2026-11-24",
+    "note": "Tutti i nomi, i lavori e le produzioni sono inventati"
+  }
+}
