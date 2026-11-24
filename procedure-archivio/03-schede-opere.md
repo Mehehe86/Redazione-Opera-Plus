@@ -1,4 +1,4 @@
-# Opera+ — Procedura per le schede delle opere liriche (v1.0)
+# Opera+ — Procedura per le schede delle opere liriche (v1.1)
 
 ## A che cosa serve la scheda
 La scheda di un'opera lirica è un riferimento storico-editoriale per il giornalista AI. Contiene informazioni verificabili sull'opera, indipendenti da una rappresentazione particolare: titolo, autori, prima rappresentazione, libretto, personaggi, versioni, contesto storico e riferimenti utili. Non è una cronologia di recite, una scheda dei cast o una guida all'ascolto da preparare obbligatoriamente. Il giornalista la usa per orientarsi, poi verifica sulle fonti i fatti importanti prima di pubblicarli.
@@ -24,6 +24,14 @@ Scrivi una sinossi breve, aderente agli avvenimenti. Non inserire automaticament
 Alcune opere hanno versioni autorizzate o revisioni sostanziali che incidono su struttura, musica, testo o personaggi. Registra le versioni note e documentate, con denominazione, anno quando accertato, differenze principali e fonti. Non moltiplicare le versioni a partire da un taglio occasionale di un direttore o di una singola produzione.
 
 Quando prepari un articolo su uno spettacolo specifico, accerta quale versione venga eseguita; la scheda dell'opera non dimostra da sola quale materiale abbia utilizzato un determinato teatro.
+
+## 4 bis. Distingui le edizioni di riferimento dalle versioni storiche
+
+La **versione storica** è uno stato documentato dell'opera derivante da una revisione della composizione, del libretto o della struttura, con caratteristiche e storia proprie. Una **edizione di riferimento** è invece un testo musicale o librettistico, eventualmente curato criticamente da uno studioso, attraverso cui oggi consultiamo o studiamo l'opera. Le due categorie non sono intercambiabili.
+
+Registra le versioni storiche nel campo `versioni`. Registra le edizioni della partitura e del libretto in `edizioni_riferimento`, indicando titolo, tipo, curatore quando noto, descrizione, collegamento verificato e fonti. Un'edizione critica non è automaticamente una nuova versione storica. Per esempio, la menzione di Martin Chusid nei materiali scaligeri su *Rigoletto* va conservata quale riferimento all'edizione consultata, non come prova di una nuova versione dell'opera.
+
+Se non hai verificato l'esistenza o l'identità di specifiche revisioni storiche, lascia `versioni` vuoto, annotando l'approfondimento necessario, senza inventare una «versione originale». Non dedurre che un teatro abbia usato una particolare edizione soltanto perché la cita in un documento divulgativo, salvo che il documento chiarisca il rapporto con l'esecuzione.
 
 ## 5. Raccogli solo contesto utile e verificabile
 Quando la ricerca ne offre l'occasione, conserva circostanze della composizione, vicende censorie, rapporti con la fonte letteraria, revisioni, particolarità musicali e osservazioni drammaturgiche che aiutano a comprendere l'opera.
