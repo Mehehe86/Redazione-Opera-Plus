@@ -1,5 +1,5 @@
 {
-  "versione": "1.0",
+  "versione": "1.1",
   "id": "esempio-cantante-maria-rossi",
   "nome": "Maria Rossi (nome fittizio)",
   "nomi_alternativi": [],
@@ -25,23 +25,38 @@
           "fonti_ids": [
             "f001"
           ],
-          "note": null
+          "note": null,
+          "stagione": null
+        },
+        {
+          "stato": "interpretato",
+          "teatro": "Teatro Regio",
+          "citta": "Torino",
+          "paese": "Italia",
+          "anno": 2024,
+          "stagione": null,
+          "fonti_ids": [
+            "f003"
+          ],
+          "note": "Seconda esperienza fittizia nello stesso teatro, in un altro anno."
         },
         {
           "stato": "annunciato",
           "teatro": "Teatro Regio",
           "citta": "Parma",
           "paese": "Italia",
-          "anno": 2027,
+          "anno": null,
           "fonti_ids": [
             "f002"
           ],
-          "note": null
+          "note": null,
+          "stagione": "2026/2027"
         }
       ],
       "fonti_ids": [
         "f001",
-        "f002"
+        "f002",
+        "f003"
       ],
       "note": null
     }
@@ -59,7 +74,14 @@
       "titolo": "DOCUMENTO FITTIZIO - 2027",
       "url": "https://example.org/2027",
       "consultata_il": "2026-11-24",
-      "attesta": "Esempio inventato: Gilda annunciata al Teatro Regio di Parma nel 2027, non ancora interpretata."
+      "attesta": "Esempio inventato: Gilda annunciata al Teatro Regio di Parma per la stagione 2026/2027, senza anno della rappresentazione accertato."
+    },
+    {
+      "id": "f003",
+      "titolo": "DOCUMENTO FITTIZIO - 2024",
+      "url": "https://example.org/2024",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato: nuova interpretazione di Gilda al Teatro Regio di Torino nel 2024."
     }
   ],
   "gestione": {
