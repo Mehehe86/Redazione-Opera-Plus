@@ -1,5 +1,5 @@
 {
-  "versione": "1.0",
+  "versione": "1.1",
   "id": "opera-esempio-immaginario",
   "tipo": "opera",
   "titolo": "Il giardino delle ombre (titolo immaginario)",
@@ -80,5 +80,6 @@
     "stato": "bozza",
     "aggiornato_il": "2026-11-24",
     "note": "Solo esempio tecnico fittizio"
-  }
+  },
+  "edizioni_riferimento": []
 }
