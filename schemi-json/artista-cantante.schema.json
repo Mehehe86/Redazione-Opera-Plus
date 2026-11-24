@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Opera+ - scheda cantante v1",
+  "title": "Opera+ - scheda cantante v1.1",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -15,7 +15,7 @@
   ],
   "properties": {
     "versione": {
-      "const": "1.0"
+      "const": "1.1"
     },
     "id": {
       "type": "string",
@@ -172,6 +172,7 @@
         "citta",
         "paese",
         "anno",
+        "stagione",
         "fonti_ids"
       ],
       "properties": {
@@ -223,6 +224,13 @@
             "type": "string",
             "minLength": 1
           }
+        },
+        "stagione": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Stagione teatrale come riportata nella fonte (es. 2023/2024). Se si conosce solo la stagione, lasciare anno null."
         }
       },
       "allOf": [
@@ -301,7 +309,8 @@
             "null"
           ]
         }
-      }
+      },
+      "description": "Per ogni ruolo registrare tutte le esperienze documentabili, compresi ritorni allo stesso teatro in anni/stagioni differenti."
     }
   }
 }
