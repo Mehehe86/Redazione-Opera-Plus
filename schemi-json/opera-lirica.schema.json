@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Opera+ — Scheda opera lirica v1.0",
+  "title": "Opera+ — Scheda opera lirica v1.1",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -13,12 +13,13 @@
     "prima_rappresentazione",
     "personaggi",
     "versioni",
+    "edizioni_riferimento",
     "fonti",
     "gestione"
   ],
   "properties": {
     "versione": {
-      "const": "1.0"
+      "const": "1.1"
     },
     "id": {
       "type": "string",
@@ -245,7 +246,8 @@
             }
           }
         }
-      }
+      },
+      "description": "Solo versioni storiche effettivamente documentate; non includere edizioni critiche o libretti moderni."
     },
     "contesto_storico": {
       "type": "array",
@@ -366,6 +368,69 @@
             "string",
             "null"
           ]
+        }
+      }
+    },
+    "edizioni_riferimento": {
+      "type": "array",
+      "description": "Testi e edizioni del libretto o della partitura, distinte dalle versioni storiche dell'opera. Riportare curatore, natura e fonti quando noti.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "titolo",
+          "tipo",
+          "curatore",
+          "descrizione",
+          "fonti_ids"
+        ],
+        "properties": {
+          "titolo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tipo": {
+            "enum": [
+              "edizione_critica",
+              "libretto",
+              "partitura",
+              "altra_edizione"
+            ]
+          },
+          "curatore": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "descrizione": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "anno": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "risorsa_url": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "uri"
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
         }
       }
     }
