@@ -1,0 +1,280 @@
+{
+  "versione": "1.1",
+  "id": "opera-rigoletto-verdi",
+  "tipo": "opera",
+  "titolo": "Rigoletto",
+  "titoli_alternativi": [],
+  "compositori": [
+    {
+      "nome": "Giuseppe Verdi",
+      "fonti_ids": [
+        "f001",
+        "f003"
+      ]
+    }
+  ],
+  "librettisti": [
+    {
+      "nome": "Francesco Maria Piave",
+      "fonti_ids": [
+        "f001",
+        "f003"
+      ]
+    }
+  ],
+  "genere": "Melodramma",
+  "struttura": "Tre atti",
+  "lingue_libretto": [
+    "italiano"
+  ],
+  "fonti_letterarie": [
+    {
+      "testo": "Le roi s’amuse, dramma teatrale di Victor Hugo (1832).",
+      "fonti_ids": [
+        "f003",
+        "f004"
+      ]
+    }
+  ],
+  "prima_rappresentazione": {
+    "data": "1851-03-11",
+    "teatro": "Teatro La Fenice",
+    "citta": "Venezia",
+    "paese": "Italia",
+    "fonti_ids": [
+      "f001",
+      "f003"
+    ],
+    "note": "Prima rappresentazione assoluta; non confondere con riprese o precedenti progetti di adattamento."
+  },
+  "ambientazione": "Mantova e dintorni, XVI secolo, secondo il libretto consultato.",
+  "sinossi": "Alla corte del Duca di Mantova, il buffone Rigoletto si attira la maledizione del conte di Monterone. Il Duca seduce Gilda, figlia di Rigoletto, che i cortigiani rapiscono credendola l’amante del buffone. Rigoletto decide di vendicarsi e incarica Sparafucile di uccidere il Duca; Gilda, ancora innamorata, si sacrifica al suo posto. Rigoletto scopre che il corpo consegnatogli è quello della figlia morente.",
+  "personaggi": [
+    {
+      "nome": "Duca di Mantova",
+      "registro_vocale": "tenore",
+      "descrizione": "Duca di Mantova",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Rigoletto",
+      "registro_vocale": "baritono",
+      "descrizione": "Buffone di corte del Duca",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Gilda",
+      "registro_vocale": "soprano",
+      "descrizione": "Figlia di Rigoletto",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Sparafucile",
+      "registro_vocale": "basso",
+      "descrizione": "Sicario",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Maddalena",
+      "registro_vocale": "contralto",
+      "descrizione": "Sorella di Sparafucile",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Giovanna",
+      "registro_vocale": "mezzosoprano",
+      "descrizione": "Custode di Gilda",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Conte di Monterone",
+      "registro_vocale": "baritono",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Marullo",
+      "registro_vocale": "baritono",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Matteo Borsa",
+      "registro_vocale": "tenore",
+      "descrizione": "Cortigiano",
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Conte di Ceprano",
+      "registro_vocale": "basso",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Contessa di Ceprano",
+      "registro_vocale": "mezzosoprano",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Usciere di corte",
+      "registro_vocale": "tenore",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "nome": "Paggio della Duchessa",
+      "registro_vocale": "tenore o mezzosoprano",
+      "descrizione": null,
+      "versioni_ids": [],
+      "fonti_ids": [
+        "f002"
+      ]
+    }
+  ],
+  "versioni": [],
+  "contesto_storico": [
+    {
+      "testo": "La genesi dell’opera fu segnata dalle obiezioni censorie al soggetto tratto da Hugo; nel risultato rappresentato l’azione è spostata alla corte del Duca di Mantova, anziché a quella del re di Francia.",
+      "fonti_ids": [
+        "f003",
+        "f006"
+      ]
+    }
+  ],
+  "note_musicali_drammaturgiche": [
+    {
+      "testo": "La maledizione pronunciata da Monterone è un elemento centrale dell’azione e ritorna nella coscienza di Rigoletto.",
+      "natura": "documentazione",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f002",
+        "f003"
+      ]
+    }
+  ],
+  "risorse": [
+    {
+      "tipo": "libretto",
+      "titolo": "Libretto Rigoletto, Teatro alla Scala, stagione 2024/2025",
+      "url": "https://www.teatroallascala.org/static/upload/19_/19_rigoletto_2024-2025-libretto.pdf",
+      "accesso": "PDF pubblico consultabile",
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "tipo": "studio",
+      "titolo": "Rigoletto: libretto e guida all’opera, Teatro La Fenice",
+      "url": "https://www.teatrolafenice.it/wp-content/uploads/2019/03/RIGOLETTO.pdf",
+      "accesso": "PDF pubblico consultabile",
+      "fonti_ids": [
+        "f003"
+      ]
+    }
+  ],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Corago — Rigoletto, evento 11 marzo 1851",
+      "url": "https://corago.unibo.it/evento/Z000029613",
+      "consultata_il": "2026-11-24",
+      "attesta": "Prima assoluta 11 marzo 1851 alla Fenice di Venezia; Verdi, Piave e personaggi della produzione.",
+      "nota": null
+    },
+    {
+      "id": "f002",
+      "titolo": "Teatro alla Scala — Rigoletto, libretto 2024/2025 (edizione critica Chusid)",
+      "url": "https://www.teatroallascala.org/static/upload/19_/19_rigoletto_2024-2025-libretto.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Libretto in tre atti, elenco dei personaggi e registri vocali, ambientazione Mantova XVI secolo, indicazione edizione critica Martin Chusid.",
+      "nota": null
+    },
+    {
+      "id": "f003",
+      "titolo": "Teatro La Fenice — Rigoletto, libretto e guida all’opera",
+      "url": "https://www.teatrolafenice.it/wp-content/uploads/2019/03/RIGOLETTO.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Fonte drammatica Le roi s’amuse di Victor Hugo, data e sede della prima, cenni alla censura e storia della genesi.",
+      "nota": null
+    },
+    {
+      "id": "f004",
+      "titolo": "Royal Ballet and Opera — Opera Essentials: Rigoletto",
+      "url": "https://www.rbo.org.uk/opera-essentials-rigoletto",
+      "consultata_il": "2026-11-24",
+      "attesta": "Piave, Victor Hugo e contesto della commissione della Fenice.",
+      "nota": null
+    },
+    {
+      "id": "f005",
+      "titolo": "Teatro alla Scala — Il libretto in sintesi",
+      "url": "https://www.teatroallascala.org/static/upload/19_/19_rigoletto_2024-2025-il-libretto-in-sintesi.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Sintesi della vicenda conforme alla presentazione scaligera.",
+      "nota": null
+    },
+    {
+      "id": "f006",
+      "titolo": "Opéra national de Paris — Rigoletto: Le roi s’amuse e la censura",
+      "url": "https://www.operadeparis.fr/en/season-15-16/opera/rigoletto",
+      "consultata_il": "2026-11-24",
+      "attesta": "Contesto della censura relativa a Hugo e all’adattamento verdiano.",
+      "nota": null
+    }
+  ],
+  "gestione": {
+    "stato": "approvata",
+    "aggiornato_il": "2026-11-24",
+    "note": "Scheda di riferimento approvata dopo il collaudo. L'elenco delle versioni storiche resta vuoto in attesa di un'eventuale ricerca specifica; l'edizione critica citata dalla Scala è registrata separatamente. Eventuali varianti del testo richiedono ulteriori verifiche."
+  },
+  "edizioni_riferimento": [
+    {
+      "titolo": "Edizione critica di Rigoletto citata nel libretto del Teatro alla Scala, stagione 2024/2025",
+      "tipo": "edizione_critica",
+      "curatore": "Martin Chusid",
+      "descrizione": "Il libretto pubblicato dal Teatro alla Scala indica l'edizione critica curata da Martin Chusid. È un riferimento editoriale, non una versione storica autonoma dell'opera.",
+      "anno": null,
+      "risorsa_url": "https://www.teatroallascala.org/static/upload/19_/19_rigoletto_2024-2025-libretto.pdf",
+      "fonti_ids": [
+        "f002"
+      ]
+    }
+  ]
+}
