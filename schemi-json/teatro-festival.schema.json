@@ -1,0 +1,291 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Opera+ — Scheda teatro o festival v1.0",
+  "description": "Identità e storia di teatri, festival e istituzioni di produzione o programmazione, con distinzione fra organizzazione e luoghi fisici.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versione",
+    "id",
+    "tipo",
+    "nome",
+    "citta",
+    "paese",
+    "sedi",
+    "attivita",
+    "storia",
+    "fonti",
+    "gestione"
+  ],
+  "properties": {
+    "versione": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tipo": {
+      "enum": [
+        "teatro",
+        "festival",
+        "istituzione"
+      ]
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nomi_alternativi": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "citta": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Città di riferimento dell'istituzione; le singole sedi possono essere in altre città."
+    },
+    "paese": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sito_ufficiale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "soggetto_gestore": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Denominazione documentata dell'organizzazione che gestisce o promuove l'istituzione; non confondere con sede."
+    },
+    "indirizzo_istituzionale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Solo indirizzo professionale pubblico, quando utile, senza dati privati."
+    },
+    "sedi": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "nome",
+          "citta",
+          "paese",
+          "stato",
+          "fonti_ids"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "citta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paese": {
+            "type": "string",
+            "minLength": 1
+          },
+          "indirizzo": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "stato": {
+            "enum": [
+              "attuale",
+              "storica",
+              "occasionale",
+              "da_verificare"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "attivita": {
+      "type": "array",
+      "description": "Tipi di programmazione o attività stabili, non singoli spettacoli o stagioni.",
+      "items": {
+        "$ref": "#/$defs/fatto"
+      }
+    },
+    "fondazione_o_avvio": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Data o anno di fondazione/avvio documentato: non equivale necessariamente all'inaugurazione dell'edificio attuale."
+    },
+    "storia": {
+      "type": "array",
+      "description": "Eventi storici selezionati e verificati: fondazione, incendio, ricostruzione, trasferimento, trasformazioni.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "data_o_periodo",
+          "descrizione",
+          "fonti_ids"
+        ],
+        "properties": {
+          "data_o_periodo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "descrizione": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "identita_istituzionale": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Breve sintesi documentata della funzione dell'istituzione; non una descrizione promozionale."
+    },
+    "note_operative": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Dati potenzialmente mutevoli, da ricontrollare prima di pubblicare."
+    },
+    "fonti": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "gestione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "aggiornato_il"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "bozza",
+            "approvata",
+            "da_verificare"
+          ]
+        },
+        "aggiornato_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fatto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "testo",
+        "fonti_ids"
+      ],
+      "properties": {
+        "testo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titolo",
+        "url",
+        "consultata_il",
+        "attesta"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titolo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "consultata_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "attesta": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
