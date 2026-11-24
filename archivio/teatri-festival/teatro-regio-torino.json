@@ -1,0 +1,123 @@
+{
+  "versione": "1.0",
+  "id": "teatro-regio-torino",
+  "tipo": "teatro",
+  "nome": "Teatro Regio di Torino",
+  "nomi_alternativi": [
+    "Regio Teatro di Torino"
+  ],
+  "citta": "Torino",
+  "paese": "Italia",
+  "sito_ufficiale": "https://www.teatroregio.torino.it/",
+  "soggetto_gestore": "Fondazione Teatro Regio di Torino",
+  "indirizzo_istituzionale": "Piazza Castello 215, Torino, Italia",
+  "sedi": [
+    {
+      "nome": "Teatro Regio",
+      "citta": "Torino",
+      "paese": "Italia",
+      "indirizzo": "Piazza Castello 215",
+      "stato": "attuale",
+      "note": "Edificio inaugurato il 10 aprile 1973; progetto di Carlo Mollino.",
+      "fonti_ids": [
+        "f001",
+        "f002",
+        "f003"
+      ]
+    },
+    {
+      "nome": "Antico Teatro Regio",
+      "citta": "Torino",
+      "paese": "Italia",
+      "indirizzo": null,
+      "stato": "storica",
+      "note": "Teatro inaugurato nel 1740, distrutto da un incendio nel 1936.",
+      "fonti_ids": [
+        "f001",
+        "f004"
+      ]
+    }
+  ],
+  "attivita": [
+    {
+      "testo": "Stagione di opera e balletto.",
+      "fonti_ids": [
+        "f005"
+      ]
+    },
+    {
+      "testo": "Concerti sinfonico-corali e cameristici, attività per scuole e famiglie, visite e conferenze.",
+      "fonti_ids": [
+        "f005"
+      ]
+    }
+  ],
+  "fondazione_o_avvio": "1740",
+  "storia": [
+    {
+      "data_o_periodo": "26 dicembre 1740",
+      "descrizione": "Inaugurazione del Regio Teatro con Arsace di Francesco Feo.",
+      "fonti_ids": [
+        "f001"
+      ]
+    },
+    {
+      "data_o_periodo": "1936",
+      "descrizione": "L'antico teatro viene distrutto da un incendio.",
+      "fonti_ids": [
+        "f004"
+      ]
+    },
+    {
+      "data_o_periodo": "10 aprile 1973",
+      "descrizione": "Inaugurazione del nuovo Teatro Regio con I vespri siciliani di Verdi, nella regia di Maria Callas e Giuseppe Di Stefano.",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "identita_istituzionale": "Teatro d'opera con origini nel 1740 e sede contemporanea in piazza Castello a Torino.",
+  "note_operative": "Verificare nuovamente programmi e direzioni in carica prima di utilizzarli in un articolo.",
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Teatro Regio Torino — Storia",
+      "url": "https://www.teatroregio.torino.it/il-regio/storia",
+      "consultata_il": "2026-11-24",
+      "attesta": "Date e titoli delle inaugurazioni del 1740 e 1973, storia istituzionale, architettura."
+    },
+    {
+      "id": "f002",
+      "titolo": "Ministero della Cultura — Atlante architettura contemporanea: Teatro Regio",
+      "url": "https://atlantearchitetturacontemporanea.cultura.gov.it/teatro-regio/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Indirizzo piazza Castello 215 e attribuzioni del progetto moderno."
+    },
+    {
+      "id": "f003",
+      "titolo": "Città di Torino — Fondazione Teatro Regio di Torino",
+      "url": "https://www.comune.torino.it/amministrazione/fondazione-teatro-regio-torino",
+      "consultata_il": "2026-11-24",
+      "attesta": "Denominazione della Fondazione e sede principale in piazza Castello 215."
+    },
+    {
+      "id": "f004",
+      "titolo": "Città di Torino — Teatro Regio",
+      "url": "https://www.comune.torino.it/vivere-comune/luoghi/teatro-regio",
+      "consultata_il": "2026-11-24",
+      "attesta": "Distruzione dell'antico edificio nell'incendio del 1936 e ricostruzione successiva."
+    },
+    {
+      "id": "f005",
+      "titolo": "Teatro Regio Torino — Informazioni generali",
+      "url": "https://teatroregio.torino.it/informazioni-generali",
+      "consultata_il": "2026-11-24",
+      "attesta": "Attività di opera, balletto, concerti e proposte per scuole e famiglie."
+    }
+  ],
+  "gestione": {
+    "stato": "approvata",
+    "aggiornato_il": "2026-11-24",
+    "note": "Prima scheda reale di collaudo. Non ancora approvata per la repository condivisa. Scheda approvata dopo collaudo editoriale; verificare dati potenzialmente mutevoli prima della pubblicazione."
+  }
+}
