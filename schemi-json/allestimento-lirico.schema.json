@@ -1,0 +1,580 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Opera+ — Scheda allestimento lirico v1.0",
+  "description": "Un allestimento è distinto dall'opera e dalle sue presentazioni presso teatri differenti. Non è un calendario di recite.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versione",
+    "id",
+    "tipo",
+    "opera",
+    "identita_allestimento",
+    "responsabili",
+    "origine",
+    "presentazioni",
+    "caratteristiche_documentate",
+    "ricezione_critica",
+    "fonti",
+    "gestione"
+  ],
+  "properties": {
+    "versione": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tipo": {
+      "const": "allestimento"
+    },
+    "opera": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "titolo",
+        "compositore"
+      ],
+      "properties": {
+        "titolo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compositore": {
+          "type": "string",
+          "minLength": 1
+        },
+        "opera_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "identita_allestimento": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "denominazione",
+        "nota_identificazione"
+      ],
+      "properties": {
+        "denominazione": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Nome identificativo se disponibile, senza inventare un titolo ufficiale"
+        },
+        "nota_identificazione": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Perché le diverse presentazioni appartengono allo stesso allestimento, o quali dubbi permangono"
+        },
+        "versione_opera_usata": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Specificare soltanto se documentata; una edizione musicale non va confusa con versione storica"
+        }
+      }
+    },
+    "responsabili": {
+      "type": "array",
+      "description": "Ruoli della produzione originaria, distinti da eventuali sostituzioni di ripresa.",
+      "items": {
+        "$ref": "#/$defs/credito"
+      }
+    },
+    "origine": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato_documentato",
+        "teatro",
+        "citta",
+        "paese",
+        "anno",
+        "stagione",
+        "fonti_ids"
+      ],
+      "properties": {
+        "stato_documentato": {
+          "enum": [
+            "prima_documentata",
+            "origine_incerta",
+            "annunciata"
+          ]
+        },
+        "teatro": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "citta": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paese": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anno": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1600,
+          "maximum": 2200
+        },
+        "stagione": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "teatro": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "teatro"
+            ]
+          },
+          "then": {
+            "properties": {
+              "citta": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "coproduttori": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "nome",
+          "fonti_ids"
+        ],
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "citta": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "presentazioni": {
+      "type": "array",
+      "description": "Prime, riprese e tournée documentate senza elencare le singole date di recita.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tipo_presentazione",
+          "stato",
+          "teatro",
+          "citta",
+          "paese",
+          "anno",
+          "stagione",
+          "fonti_ids"
+        ],
+        "properties": {
+          "tipo_presentazione": {
+            "enum": [
+              "prima_allestimento",
+              "ripresa",
+              "trasferimento",
+              "tournée",
+              "da_verificare"
+            ]
+          },
+          "stato": {
+            "enum": [
+              "realizzata",
+              "annunciata",
+              "annullata",
+              "da_verificare"
+            ]
+          },
+          "teatro": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "citta": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "paese": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "anno": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1600,
+            "maximum": 2200
+          },
+          "stagione": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "variazioni_documentate": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Modifiche di scene, regia, costumi o adattamenti attestati nella specifica ripresa"
+          },
+          "crediti_specifici": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/credito"
+            }
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "teatro": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "teatro"
+              ]
+            },
+            "then": {
+              "properties": {
+                "citta": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "caratteristiche_documentate": {
+      "type": "array",
+      "description": "Elementi concrete di regia e scena con fonti ufficiali o testimonianze attribuite.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "testo",
+          "natura",
+          "fonti_ids"
+        ],
+        "properties": {
+          "testo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "natura": {
+            "enum": [
+              "descrizione_verificata",
+              "intenzione_dichiarata"
+            ]
+          },
+          "attribuzione": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "ricezione_critica": {
+      "type": "array",
+      "description": "Sintesi attribuite di letture favorevoli e riserve, senza generare un giudizio della redazione.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "testata",
+          "autore",
+          "data",
+          "teatro",
+          "citta",
+          "aspetto",
+          "valutazione",
+          "fonte_id"
+        ],
+        "properties": {
+          "testata": {
+            "type": "string",
+            "minLength": 1
+          },
+          "autore": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "data": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "teatro": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "citta": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "aspetto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valutazione": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "risorse": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "tipo",
+          "titolo",
+          "url",
+          "fonti_ids"
+        ],
+        "properties": {
+          "tipo": {
+            "enum": [
+              "comunicato",
+              "programma",
+              "intervista",
+              "immagine",
+              "video",
+              "recensione",
+              "altro"
+            ]
+          },
+          "titolo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "fonti_ids": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "fonti": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "gestione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "aggiornato_il"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "bozza",
+            "approvata",
+            "da_verificare"
+          ]
+        },
+        "aggiornato_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "credito": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "incarico",
+        "nome",
+        "fonti_ids"
+      ],
+      "properties": {
+        "incarico": {
+          "type": "string",
+          "minLength": 1
+        },
+        "nome": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titolo",
+        "url",
+        "consultata_il",
+        "attesta"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titolo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "consultata_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "attesta": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
