@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Opera+ - scheda cantante v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "versione",
+    "id",
+    "nome",
+    "registro_vocale",
+    "biografia",
+    "repertorio",
+    "fonti",
+    "gestione"
+  ],
+  "properties": {
+    "versione": {
+      "const": "1.0"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nomi_alternativi": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "registro_vocale": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "biografia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "formazione": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fatto"
+      }
+    },
+    "incarichi": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fatto"
+      }
+    },
+    "siti_ufficiali": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "nota_omonimia": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "repertorio": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/ruolo"
+      }
+    },
+    "fonti": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "gestione": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "aggiornato_il"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "bozza",
+            "approvata",
+            "da_verificare"
+          ]
+        },
+        "aggiornato_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "fatto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "testo",
+        "fonti_ids"
+      ],
+      "properties": {
+        "testo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fonte": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "titolo",
+        "url",
+        "consultata_il",
+        "attesta"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titolo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "consultata_il": {
+          "type": "string",
+          "format": "date"
+        },
+        "attesta": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "esperienza": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "stato",
+        "teatro",
+        "citta",
+        "paese",
+        "anno",
+        "fonti_ids"
+      ],
+      "properties": {
+        "stato": {
+          "enum": [
+            "interpretato",
+            "annunciato",
+            "annullato",
+            "sostituito"
+          ]
+        },
+        "teatro": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "citta": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "paese": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anno": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1600,
+          "maximum": 2200
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "teatro": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "teatro"
+            ]
+          },
+          "then": {
+            "properties": {
+              "citta": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "ruolo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "opera",
+        "compositore",
+        "personaggio",
+        "stato_documentato",
+        "esperienze",
+        "fonti_ids"
+      ],
+      "properties": {
+        "opera": {
+          "type": "string",
+          "minLength": 1
+        },
+        "compositore": {
+          "type": "string",
+          "minLength": 1
+        },
+        "personaggio": {
+          "type": "string",
+          "minLength": 1
+        },
+        "stato_documentato": {
+          "enum": [
+            "interpretato",
+            "annunciato",
+            "in_preparazione",
+            "repertorio_dichiarato_non_verificato"
+          ]
+        },
+        "esperienze": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/esperienza"
+          }
+        },
+        "fonti_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
