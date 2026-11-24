@@ -1,0 +1,312 @@
+{
+  "versione": "1.0",
+  "id": "allestimento-iris-menghini-torino-2026",
+  "tipo": "allestimento",
+  "opera": {
+    "titolo": "Iris",
+    "compositore": "Pietro Mascagni",
+    "opera_id": null
+  },
+  "identita_allestimento": {
+    "denominazione": "Iris — nuovo allestimento Teatro Regio Torino, 2026",
+    "nota_identificazione": "Produzione presentata esplicitamente dal Regio come nuovo allestimento; Daniele Menghini firma la regia. Non sono state accertate riprese dello stesso progetto in altri teatri al momento del collaudo. L’Anteprima Giovani del 29 ottobre 2026 precede la prima ufficiale del 5 novembre.",
+    "versione_opera_usata": null
+  },
+  "responsabili": [
+    {
+      "incarico": "regia",
+      "nome": "Daniele Menghini",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    },
+    {
+      "incarico": "scene",
+      "nome": "Davide Signorini",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    },
+    {
+      "incarico": "costumi",
+      "nome": "Nika Campisi",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    },
+    {
+      "incarico": "luci",
+      "nome": "Gianni Bertoli",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    },
+    {
+      "incarico": "coreografie",
+      "nome": "Marco Caudera",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    },
+    {
+      "incarico": "coreografia delle marionette",
+      "nome": "Valeria Sacco (Riserva Canini Teatro)",
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "incarico": "drammaturgia",
+      "nome": "Michele Panella",
+      "fonti_ids": [
+        "f001",
+        "f002"
+      ]
+    }
+  ],
+  "origine": {
+    "stato_documentato": "prima_documentata",
+    "teatro": "Teatro Regio",
+    "citta": "Torino",
+    "paese": "Italia",
+    "anno": 2026,
+    "stagione": "2026/2027",
+    "note": "Anteprima Giovani 29 ottobre; prima ufficiale 5 novembre 2026. Direzione musicale di Andrea Battistoni; non confondere questa prima dell’allestimento con la prima assoluta dell’opera nel 1898.",
+    "fonti_ids": [
+      "f001",
+      "f002"
+    ]
+  },
+  "coproduttori": [],
+  "presentazioni": [
+    {
+      "tipo_presentazione": "prima_allestimento",
+      "stato": "realizzata",
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "paese": "Italia",
+      "anno": 2026,
+      "stagione": "2026/2027",
+      "variazioni_documentate": null,
+      "crediti_specifici": [
+        {
+          "incarico": "direzione musicale",
+          "nome": "Andrea Battistoni",
+          "fonti_ids": [
+            "f001",
+            "f002"
+          ]
+        }
+      ],
+      "note": "29 ottobre Anteprima Giovani; 5, 8, 10, 15, 17 e 18 novembre le rappresentazioni indicate nella scheda del Regio. Conferma successiva alla prima dalla critica del 5 e 8 novembre. Calendario originario di tutte le recite, non prova individuale dell’effettivo svolgimento di ciascuna recita. Due cast annunciati: Erika Grimaldi e Iwona Sobotka per Iris.",
+      "fonti_ids": [
+        "f001",
+        "f002",
+        "f005",
+        "f009"
+      ]
+    }
+  ],
+  "caratteristiche_documentate": [
+    {
+      "testo": "Ambientazione in un paesaggio post-atomico, con riferimenti agli hibakujumoku, alberi sopravvissuti ai bombardamenti atomici; scelta di trasporre l’originario giapponismo in un ambiente devastato.",
+      "natura": "intenzione_dichiarata",
+      "attribuzione": "Daniele Menghini, comunicato del Teatro Regio del 27 ottobre 2026",
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "testo": "La scena di Yoshiwara si svolge in un edificio in macerie abitato da figure mascherate e deformi; in una grotta iniziale compaiono origami e fiori di carta.",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f002",
+        "f006"
+      ]
+    },
+    {
+      "testo": "Il teatro documenta oltre 150 girasoli realizzati a mano, origami e un fiore animatronico; il finale utilizza i girasoli come immagine di rinascita.",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f002",
+        "f006"
+      ]
+    },
+    {
+      "testo": "Le marionette costituiscono un elemento visivo e drammaturgico importante; coreografia specifica attribuita a Valeria Sacco (Riserva Canini Teatro).",
+      "natura": "descrizione_verificata",
+      "attribuzione": null,
+      "fonti_ids": [
+        "f002"
+      ]
+    }
+  ],
+  "ricezione_critica": [
+    {
+      "testata": "Bachtrack",
+      "autore": "Mark Pullinger",
+      "data": "2026-11-06",
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "aspetto": "lettura scenica dell’opera",
+      "valutazione": "Apprezza la sensibilità e la convinzione drammatica dell’allestimento; riferisce che la scenografia si solleva per rivelare un altro ambiente e il salto di Iris. La sua osservazione sulla voce di Grimaldi è specifica della recita del 5 novembre.",
+      "fonte_id": "f005"
+    },
+    {
+      "testata": "Connessi all’Opera",
+      "autore": null,
+      "data": null,
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "aspetto": "trasfigurazione finale",
+      "valutazione": "Valuta favorevolmente l’effetto visivo dei girasoli che scendono in scena e il simbolismo della rinascita. Attribuzione dell’autore da confermare sulla pagina integrale.",
+      "fonte_id": "f006"
+    },
+    {
+      "testata": "L’Ape musicale",
+      "autore": null,
+      "data": null,
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "aspetto": "allestimento e costumi",
+      "valutazione": "Giudica originale la lettura registica di Menghini e considera efficace il contrasto tra la scenografia cupa e i costumi di Nika Campisi. Autore e data di pubblicazione da verificare sulla pagina integrale.",
+      "fonte_id": "f007"
+    },
+    {
+      "testata": "Il Giornale della Musica",
+      "autore": null,
+      "data": null,
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "aspetto": "coerenza visiva dei tre atti",
+      "valutazione": "Ritiene convincente il primo atto e giudica elegante e poetica la soluzione scenica del terzo. Identità del critico da ricontrollare sul testo integrale.",
+      "fonte_id": "f008"
+    },
+    {
+      "testata": "L’Ape musicale",
+      "autore": null,
+      "data": null,
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "aspetto": "distinzione tra allestimento e libretto",
+      "valutazione": "Nella recensione della recita del 15 novembre apprezza la messinscena ma esprime riserve sulla coerenza del libretto di Illica, non sull’identità della regia.",
+      "fonte_id": "f011"
+    }
+  ],
+  "risorse": [
+    {
+      "tipo": "comunicato",
+      "titolo": "Comunicato stampa del Teatro Regio del 27 ottobre 2026",
+      "url": "https://teatroregio.torino.it/sites/default/files/uploads/comunicato-stampa/8535/file/festival-verismo-iris-comunicato-stampa-27-10.pdf",
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "tipo": "programma",
+      "titolo": "Scheda ufficiale dello spettacolo e calendario",
+      "url": "https://www.teatroregio.torino.it/opera-e-balletto-2026-2027/iris",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Teatro Regio Torino — Iris, scheda spettacolo",
+      "url": "https://www.teatroregio.torino.it/opera-e-balletto-2026-2027/iris",
+      "consultata_il": "2026-11-24",
+      "attesta": "Nuovo allestimento; calendario del 29 ottobre e 5-18 novembre; équipe artistica e cast annunciati; nella pagina compare erroneamente il 1896 per la prima assoluta."
+    },
+    {
+      "id": "f002",
+      "titolo": "Teatro Regio Torino — comunicato Iris del 27 ottobre 2026",
+      "url": "https://teatroregio.torino.it/sites/default/files/uploads/comunicato-stampa/8535/file/festival-verismo-iris-comunicato-stampa-27-10.pdf",
+      "consultata_il": "2026-11-24",
+      "attesta": "Nuovo allestimento, regia e collaboratori; ambientazione post-atomica, ispirazione hibakujumoku, origami e oltre 150 girasoli; dichiarazioni di Menghini."
+    },
+    {
+      "id": "f003",
+      "titolo": "Archivio storico Teatro dell’Opera di Roma — Iris",
+      "url": "https://archiviostorico.operaroma.it/opera/iris/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Prima assoluta dell’opera il 22 novembre 1898 al Teatro Costanzi di Roma."
+    },
+    {
+      "id": "f004",
+      "titolo": "Corago — Iris, Università di Bologna",
+      "url": "https://corago.unibo.it/opera/Z000003426",
+      "consultata_il": "2026-11-24",
+      "attesta": "Conferma la prima assoluta a Roma, Teatro Costanzi, il 22 novembre 1898."
+    },
+    {
+      "id": "f005",
+      "titolo": "Bachtrack — Mascagni’s Iris blossoms in Turin, Mark Pullinger",
+      "url": "https://bachtrack.com/review-mascagni-iris-menghini-battistoni-grimaldi-villari-teatro-regio-turin-november-2026",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione relativa alla recita del 5 novembre, pubblicata il 6 novembre: lettura favorevole della regia e osservazioni sul canto."
+    },
+    {
+      "id": "f006",
+      "titolo": "Connessi all’Opera — Torino, Teatro Regio – Iris",
+      "url": "https://www.connessiallopera.it/recensioni/2026/torino-teatro-regio-iris/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione del 5 novembre: valutazione favorevole, descrizione della trasfigurazione finale con girasoli."
+    },
+    {
+      "id": "f007",
+      "titolo": "L’Ape musicale — Torino, Iris, 05/11/2026",
+      "url": "https://www.apemusicale.it/joomla/it/recensioni/87-opera/opera-2026/17807-torino-iris-05-11-2026",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione del 5 novembre: apprezzamento per regia, costumi, direzione e interpreti; giudizio sull’opera distinto da quello sull’allestimento."
+    },
+    {
+      "id": "f008",
+      "titolo": "Il Giornale della Musica — Iris chiude con successo il Festival Verismo",
+      "url": "https://www.giornaledellamusica.it/recensioni/iris-chiude-con-successo-il-festival-verismo-del-teatro-regio-di-torino",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione del 2026: valuta favorevolmente la coerenza del primo atto e la soluzione poetica del terzo."
+    },
+    {
+      "id": "f009",
+      "titolo": "Opera Mundus — Iris, cast alternativo, 8 novembre 2026",
+      "url": "https://www.operamundus.com/recensioni/torino-teatro-regio-iris-cast-alternativo/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione di recita del secondo cast (8 novembre) distinta dalla prima; riscontri su regia e direzione."
+    },
+    {
+      "id": "f010",
+      "titolo": "Bachtrack — elenco recensioni, Orchestra del Teatro Regio di Torino",
+      "url": "https://bachtrack.com/find-reviews/performer%3D2920",
+      "consultata_il": "2026-11-24",
+      "attesta": "Breve indice che indica apprezzamento della produzione di Iris ma segnala riserve su un simbolismo talora accademico; il frammento va collegato con cautela alla recensione originale."
+    },
+    {
+      "id": "f011",
+      "titolo": "L’Ape musicale — Torino, Iris, 15/11/2026",
+      "url": "https://www.apemusicale.it/joomla/it/recensioni/87-opera/opera-2026/17840-torino-iris-15-11-2026",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione della recita del 15 novembre: giudizio favorevole sulla messinscena e riserve sulla coerenza drammaturgica del libretto."
+    },
+    {
+      "id": "f012",
+      "titolo": "Connessi all’Opera — Iris (cast alternativi), Alessandro Mormile",
+      "url": "https://www.connessiallopera.it/recensioni/2026/torino-teatro-regio-la-boheme-di-leoncavallo-e-iris-cast-alternativi/",
+      "consultata_il": "2026-11-24",
+      "attesta": "Recensione del 20 novembre relativa ai cast alternativi, diversa dalle osservazioni della prima."
+    }
+  ],
+  "gestione": {
+    "stato": "approvata",
+    "aggiornato_il": "2026-11-24",
+    "note": "Ricerca di collaudo non esaustiva; alcuni siti di recensioni erano disponibili tramite risultati di ricerca e anteprime ma non con una lettura integrale stabile: le valutazioni sono riassunte prudenzialmente e i campi autore/data non accertati restano null. Contraddizione importante: la pagina spettacolo del Regio riporta erroneamente prima assoluta 22 novembre 1896, mentre Archivio Teatro dell’Opera di Roma e Corago attestano 22 novembre 1898. La verifica di singole recite non coincide con il calendario annunciato. Scheda approvata editorialmente e archiviata; permangono i limiti di verifica sopra descritti."
+  }
+}
