@@ -1,0 +1,134 @@
+{
+  "versione": "1.0",
+  "id": "esempio-allestimento-rigoletto-immaginario",
+  "tipo": "allestimento",
+  "opera": {
+    "titolo": "Rigoletto",
+    "compositore": "Giuseppe Verdi",
+    "opera_id": "opera-rigoletto-verdi"
+  },
+  "identita_allestimento": {
+    "denominazione": null,
+    "nota_identificazione": "Esempio fittizio: una nuova regia del 2021 ripresa nel 2024; l'identità è qui inventata per collaudo.",
+    "versione_opera_usata": null
+  },
+  "responsabili": [
+    {
+      "incarico": "regia",
+      "nome": "Giulia Esempio",
+      "fonti_ids": [
+        "f001"
+      ]
+    },
+    {
+      "incarico": "scene",
+      "nome": "Luca Esempio",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "origine": {
+    "stato_documentato": "prima_documentata",
+    "teatro": "Teatro Regio",
+    "citta": "Torino",
+    "paese": "Italia",
+    "anno": 2021,
+    "stagione": null,
+    "fonti_ids": [
+      "f001"
+    ],
+    "note": "Esempio inventato"
+  },
+  "coproduttori": [],
+  "presentazioni": [
+    {
+      "tipo_presentazione": "prima_allestimento",
+      "stato": "realizzata",
+      "teatro": "Teatro Regio",
+      "citta": "Torino",
+      "paese": "Italia",
+      "anno": 2021,
+      "stagione": null,
+      "variazioni_documentate": null,
+      "crediti_specifici": [],
+      "note": null,
+      "fonti_ids": [
+        "f001"
+      ]
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "realizzata",
+      "teatro": "Teatro Regio",
+      "citta": "Parma",
+      "paese": "Italia",
+      "anno": 2024,
+      "stagione": null,
+      "variazioni_documentate": "Nessuna variazione attestata nell'esempio fittizio.",
+      "crediti_specifici": [],
+      "note": null,
+      "fonti_ids": [
+        "f002"
+      ]
+    },
+    {
+      "tipo_presentazione": "ripresa",
+      "stato": "annunciata",
+      "teatro": "Teatro Comunale",
+      "citta": "Bologna",
+      "paese": "Italia",
+      "anno": null,
+      "stagione": "2026/2027",
+      "variazioni_documentate": null,
+      "crediti_specifici": [],
+      "note": null,
+      "fonti_ids": [
+        "f003"
+      ]
+    }
+  ],
+  "caratteristiche_documentate": [
+    {
+      "testo": "Ambientazione in un'epoca immaginaria (dettaglio fittizio).",
+      "natura": "intenzione_dichiarata",
+      "attribuzione": "Giulia Esempio",
+      "fonti_ids": [
+        "f001"
+      ]
+    }
+  ],
+  "ricezione_critica": [],
+  "risorse": [],
+  "fonti": [
+    {
+      "id": "f001",
+      "titolo": "Documento fittizio — nuova produzione 2021",
+      "url": "https://example.org/produzione-2021",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato della prima e dei responsabili.",
+      "note": "Non usare come fonte."
+    },
+    {
+      "id": "f002",
+      "titolo": "Documento fittizio — ripresa 2024",
+      "url": "https://example.org/ripresa-2024",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato di ripresa della stessa regia a Parma.",
+      "note": "Non usare come fonte."
+    },
+    {
+      "id": "f003",
+      "titolo": "Documento fittizio — annuncio 2026/2027",
+      "url": "https://example.org/annuncio-2027",
+      "consultata_il": "2026-11-24",
+      "attesta": "Esempio inventato di ripresa futura annunciata.",
+      "note": "Non usare come fonte."
+    }
+  ],
+  "gestione": {
+    "stato": "bozza",
+    "aggiornato_il": "2026-11-24",
+    "note": "Scheda interamente immaginaria, solo per il collaudo tecnico."
+  }
+}
